@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MySection title="My very titly title">
+      <div>My beautiful section content</div>
+      <div>A long useless sentence to fill the content.</div>
+      <div>What a beautiful content</div>
+    </MySection>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MySection from './components/MySection.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    MySection
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  text-align:center;
 }
 </style>
